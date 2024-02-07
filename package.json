@@ -2,11 +2,17 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/LeylaFedina/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LeylaFedina/frontend-project-44/actions)",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
-  "tyoe": "module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
