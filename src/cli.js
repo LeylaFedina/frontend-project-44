@@ -1,3 +1,3 @@
  import _ from 'readline-sync';
 
-export _ ;
+//export _ ;

@@ -15,5 +15,13 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeylaFedina/frontend-project-44.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeylaFedina/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/LeylaFedina/frontend-project-44#readme"
 }
