@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/LeylaFedina/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/LeylaFedina/frontend-project-44/actions)",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "main": "index.js",
   "type": "module",
@@ -13,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "link": "^2.1.1",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
@@ -23,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/LeylaFedina/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/LeylaFedina/frontend-project-44#readme"
+  "homepage": "https://github.com/LeylaFedina/frontend-project-44#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.10.0"
+  }
 }
