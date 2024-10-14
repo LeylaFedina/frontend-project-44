@@ -1,5 +1,4 @@
 import greeting from '../src/cli.js';
-import userName from '../src/cli.js';
 import readlineSync from 'readline-sync';
 
 greeting ();
@@ -19,12 +18,12 @@ for (let i = 0; i<=4; i++) {
     console.log("Correct!");    
     i++;
     if (i >= 4){
-      console.log(`Congratulations, ${userName} !`);
+      console.log(`Congratulations, ${global.userName} !`);
     } 
   }
    
   else{
-    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again ${userName} `);
+    console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again ${global.userName}`);
     break;
   }
 }
