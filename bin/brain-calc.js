@@ -1,19 +1,17 @@
+#!/usr/bin/env node
+
+import { question } from 'readline-sync';
 import gameRound from '../src/index.js';
 
 const gameQuestion = "What is the result of the expression?";
 
 const getRandomNum = () => Math.floor(Math.random()* 101);
-let num1 = getRandomNum();
-let num2 = getRandomNum();
-
 
 const operators = ['+', '-', '*'];
 const getRandomOperator = () => {
    const operatorIndex = Math.floor(Math.random() * operators.length);
    return operators[operatorIndex];
 }
-
-const operator = getRandomOperator();
 
 function calculate (num1, num2, operator){
     switch (operator){
@@ -26,11 +24,17 @@ function calculate (num1, num2, operator){
     }
 }
 
-function checkCalsulation (num1, num2, operator){
-
-    const userAnswer = readlineSync.question(`Question : ${num}1 ${operator} ${num2}?`);
+function checkCalculation (num1, num2, operator){
+    let num1 = getRandomNum();
+    let num2 = getRandomNum();
+    const operator = getRandomOperator();
+    const userAnswer = readlineSync.question(`Question : ${num1} ${operator} ${num2}?`);
     const correctAnswer = calculate(num1, num2, operator);
-    return correctAnswer;
+    
+    return gameObject
+       //return object with question and correct answer
+
+    
 }
 
-export default ( ) => gameRound(gameQuestion, checkCalsulation());
+export default ( ) => gameRound(gameQuestion, checkCalculation);
