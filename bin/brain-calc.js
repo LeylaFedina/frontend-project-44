@@ -1,9 +1,6 @@
 import gameRound from '../src/index.js';
-import readlineSync from 'readline-sync';
 
-
-
-const gameRules = "What is the result of the expression?";
+const gameQuestion = "What is the result of the expression?";
 
 const getRandomNum = () => Math.floor(Math.random()* 101);
 let num1 = getRandomNum();
@@ -36,4 +33,4 @@ function checkCalsulation (num1, num2, operator){
     return correctAnswer;
 }
 
-export default ( ) => gameRound(gamerules, checkCalsulation());
+export default ( ) => gameRound(gameQuestion, checkCalsulation());
