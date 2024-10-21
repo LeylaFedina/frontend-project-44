@@ -9,24 +9,20 @@ const gameRound = (gameRules, configureGame)  => {
 
   console.log(gameRules);
 
- //let checkEvenReturn = configureGame();
- //console.log(checkEvenReturn);
-
 for (let i = 0; i<rounds; i) {
-   const checkEvenReturn = configureGame();
+   const check = configureGame();
 
-    if (checkEvenReturn.userAnswer === checkEvenReturn.correctAnswer){
+    if (check.userAnswer === check.correctAnswer){
         console.log("Correct!");
         i++;
+        if (i > 2) {
+            console.log(`Congratulations, ${userName} \!`);
+        }
     }
     else{
-        console.log(`'${checkEvenReturn.userAnswer}' is wrong answer ;(. 
-        Correct answer was '${checkEvenReturn.correctAnswer}'. 
-        \nLet's try again ${userName}`);
+        console.log(`'${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again ${userName}`);
+        break;
     }
 }
-console.log(`Congratulations, ${userName} !`);
 };
-
-
 export default gameRound;
