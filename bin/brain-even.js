@@ -1,4 +1,6 @@
 import gameRound from '../src/index.js';
+import readlineSync from 'readline-sync';
+
 
 
 const gameRules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
@@ -9,9 +11,12 @@ const isEven = (num) => num % 2 === 0;
 
 const checkEven = () => {
   const num = getRandomNum();
- global.userAnswer = readlineSync.question(`Question : ${num}?`);
-  //console.log(`Question : ${num}?`);
-  global.correctAnswer = isEven(num) ? 'yes' : 'no';
-  return correctAnswer;
+  let userAnswer = readlineSync.question(`Question : ${num}?`);
+  let currectAnswer = isEven(num) ? 'yes' : 'no';
+
+  return {
+    userAnswer: userAnswer,
+    currectAnswer: currectAnswer
+  };
 }
-export default ( ) => gameRound(gamerules, checkEven());
+export default gameRound(gameRules, checkEven);
