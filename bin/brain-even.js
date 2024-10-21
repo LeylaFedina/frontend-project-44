@@ -12,11 +12,11 @@ const isEven = (num) => num % 2 === 0;
 const checkEven = () => {
   const num = getRandomNum();
   let userAnswer = readlineSync.question(`Question : ${num}?`);
-  let currectAnswer = isEven(num) ? 'yes' : 'no';
+  let correctAnswer = isEven(num) ? 'yes' : 'no';
 
   return {
     userAnswer: userAnswer,
-    currectAnswer: currectAnswer
+    correctAnswer: correctAnswer
   };
 }
 export default gameRound(gameRules, checkEven);
