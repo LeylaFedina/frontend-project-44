@@ -11,8 +11,7 @@ const gameRound = (gameRules, configureGame)  => {
 
 for (let i = 0; i<rounds; i) {
    const check = configureGame();
-
-    if (check.userAnswer === check.correctAnswer){
+    if (check.userAnswer === String(check.correctAnswer)){
         console.log("Correct!");
         i++;
         if (i > 2) {
