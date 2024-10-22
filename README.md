@@ -17,7 +17,7 @@
 ```
 $ sudo npm link 
 make install
-
+```
 
 ## Игра: "Проверка на четность"
 ***
@@ -29,7 +29,6 @@ $ brain-even
 ```
 ### Пример игры
 [![asciicast](https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5)
-
 
 
 
