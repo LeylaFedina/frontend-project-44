@@ -28,7 +28,7 @@ make install
 $ brain-even
 ```
 ### Пример игры
-[![asciicast](https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5)]
+[![asciicast](https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5.svg)](https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5)
 
 
 
