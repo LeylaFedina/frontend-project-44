@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import gameRound from '../src/index.js';
 import readlineSync from 'readline-sync';
 

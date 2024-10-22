@@ -12,11 +12,34 @@
 Определение наибольшего общего делителя.
 Определение простого числа.
 
+## Установка и подготовка зависимостей
+***
+```
+$ sudo npm link 
+make install
+
+
+## Игра: "Проверка на четность"
+***
+Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное
+
+### Запуск игры
+```
+$ brain-even
+```
+### Пример игры
+[![asciicast](https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5)
+
+
+
+
+
+
+
+
 brain-calc.js asciinema
 https://asciinema.org/a/1RLIMvDvKFKpQZlqazMjMGQ3Z
 
-brain-even.js asciinema
-https://asciinema.org/a/lupKBHie9XGqqos4PsmFPUiy5
 
 brain-gcd.js asciinema
 https://asciinema.org/a/Ziik2owRTjvFWfRPRyWpA36ho 
