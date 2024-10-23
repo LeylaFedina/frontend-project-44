@@ -11,7 +11,7 @@ const isEven = (num) => num % 2 === 0;
 
 const checkEven = () => {
   const num = getRandomNum();
-  let userAnswer = readlineSync.question(`Question : ${num}?`);
+  let userAnswer = readlineSync.question(`Question : ${num}`);
   let correctAnswer = isEven(num) ? 'yes' : 'no';
 
   return {
