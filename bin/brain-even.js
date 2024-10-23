@@ -3,7 +3,7 @@
 import gameRound from '../src/index.js';
 import readlineSync from 'readline-sync';
 
-const gameRules = "Answer 'yes' if the number is even, otherwise answer 'no'.";
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getRandomNum = () => Math.floor(Math.random()* 101);
 
