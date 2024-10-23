@@ -19,7 +19,7 @@ for (let i = 0; i<rounds; i) {
         }
     }
     else{
-        console.log(`'${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again ${userName}`);
+        console.log(`'${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again ${userName}\!`);
         break;
     }
 }
