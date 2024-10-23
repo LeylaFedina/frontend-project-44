@@ -24,7 +24,7 @@ const checkCommonDivision = () => {
     numOne = getRandomNum();
     numTwo = getRandomNum();  
     let userAnswer = readlineSync.question(`Question: ${numOne} ${numTwo}`);
-    let correctAnswer = findCommonDivisor(numOne, numTwo);
+    let correctAnswer = String(findCommonDivisor(numOne, numTwo));
 
     return {
         userAnswer: userAnswer,
