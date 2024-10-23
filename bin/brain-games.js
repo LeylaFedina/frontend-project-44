@@ -1,6 +1,4 @@
- #!/usr/bin/env node
-
- console.log('hello');
+ //#!/usr/bin/env node
 
 import userName from '../src/cli.js';
 
