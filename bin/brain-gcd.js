@@ -16,7 +16,6 @@ const findCommonDivisor = () => {
         if (numOne % i === 0 && numTwo %i ===0) {
             return i;
         }
-        i-= 1;
     }
 };
 
