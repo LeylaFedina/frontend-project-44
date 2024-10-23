@@ -15,7 +15,7 @@ for (let i = 0; i<rounds; i) {
         console.log("Correct!");
         i++;
         if (i > 2) {
-            console.log(`Congratulations, ${userName} \!`);
+            console.log(`Congratulations, ${userName}\!`);
         }
     }
     else{
