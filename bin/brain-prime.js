@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import gameRound from '../src/index.js';
 
-const gameRules = '"yes" if given number is prime. Otherwise answer "no".';
+const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getRandomNum = () => Math.floor(Math.random()* 101);
 
