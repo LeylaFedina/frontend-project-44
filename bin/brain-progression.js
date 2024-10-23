@@ -28,7 +28,7 @@ const checkProgression = () => {
  progressionArray[randomIndex] = '..';
  const progressionArrayStr =  progressionArray.join(' ');
 
- const userAnswer = readlineSync.question(`Question : ${progressionArrayStr}`);
+ const userAnswer = readlineSync.question(`Question: ${progressionArrayStr}`);
 
  return {
    userAnswer: userAnswer,

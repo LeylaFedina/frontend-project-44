@@ -28,7 +28,7 @@ function checkCalculation (num1, num2, operator){
     num1 = getRandomNum();
     num2 = getRandomNum();
     operator = getRandomOperator();
-    let userAnswer = readlineSync.question(`Question : ${num1} ${operator} ${num2}?`);
+    let userAnswer = readlineSync.question(`Question: ${num1} ${operator} ${num2}`);
     let correctAnswer = calculate(num1, num2, operator);
     
     return {

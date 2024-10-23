@@ -22,7 +22,7 @@ const isPrime = () => {
 
 const checkIsPrime = () => {
     const randomNum = getRandomNum();
-    const userAnswer = readlineSync.question(`Question : ${randomNum}?`);
+    const userAnswer = readlineSync.question(`Question: ${randomNum}`);
     const correctAnswer = isPrime(randomNum) ? 'yes' : 'no' ;
     return {
         userAnswer: userAnswer,
