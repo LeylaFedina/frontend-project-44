@@ -15,11 +15,11 @@ for (let i = 0; i<rounds; i) {
         console.log("Correct!");
         i++;
         if (i > 2) {
-            console.log(`Congratulations, ${userName}\!`);
+            console.log(`Congratulations, ${userName}!`);
         }
     }
     else{
-        console.log(`'${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again, ${userName}\!`);
+        console.log(`'${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again, ${userName}!`);
         break;
     }
 }
