@@ -8,7 +8,7 @@ const getRandomNum = () => Math.floor(Math.random() * 101);
 
 const isPrime = (num) => {
   if (num > 1) {
-    for (let i = 2; i < num / 2; i=i+1) {
+    for (let i = 2; i < num / 2; i = i + 1) {
       if (num % i === 0) {
         return false;
       }

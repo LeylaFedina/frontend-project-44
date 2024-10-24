@@ -13,7 +13,7 @@ const gameRound = (gameRules, configureGame) => {
     const check = configureGame();
     if (check.userAnswer === String(check.correctAnswer)) {
       console.log('Correct!');
-      i=i+1;
+      i = i + 1;
       if (i > 2) {
         console.log(`Congratulations, ${userName}!`);
       }

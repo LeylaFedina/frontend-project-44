@@ -13,7 +13,7 @@ const generateProgression = () => {
   progression[0] = getRandomNum();
   const arrDiff = getRandomNum();
 
-  for (let i = 1; i < arrLength; i=i+1) {
+  for (let i = 1; i < arrLength; i = i + 1) {
     const nextArrElement = progression[i - 1] + arrDiff;
     progression.push(nextArrElement);
   }

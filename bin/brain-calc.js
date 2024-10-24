@@ -13,8 +13,8 @@ const getRandomOperator = () => {
   return operators[operatorIndex];
 };
 
-let numOne = getRandomNum();
-let numTwo = getRandomNum();
+let num1 = getRandomNum();
+let num2 = getRandomNum();
 let operator = getRandomOperator();
 
 function calculate(num1, num2, operator) {
