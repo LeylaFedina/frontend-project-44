@@ -17,7 +17,7 @@ let num1 = getRandomNum();
 let num2 = getRandomNum();
 let operator = getRandomOperator();
 
-function calculate(num1, num2, operator) {
+const calculate = () => {
   switch (operator) {
     case ('+'):
       return num1 + num2;
@@ -28,7 +28,7 @@ function calculate(num1, num2, operator) {
   }
 }
 
-function checkCalculation(num1, num2, operator) {
+const checkCalculation = () => {
   num1 = getRandomNum();
   num2 = getRandomNum();
   operator = getRandomOperator();
