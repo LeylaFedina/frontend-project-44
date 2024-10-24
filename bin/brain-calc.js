@@ -25,7 +25,7 @@ const calculate = () => {
       return num1 - num2;
     case ('*'):
       return num1 * num2;
-    default: 
+    default:
       break;
   }
   return false;
@@ -43,4 +43,3 @@ const checkCalculation = () => {
   };
 };
 export default gameRound(gameRules, checkCalculation);
-
