@@ -7,8 +7,7 @@ const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".
 
 const getRandomNum = () => Math.floor(Math.random()* 101);
 
-const isPrime = () => {
-    const num = getRandomNum();
+const isPrime = (num) => {
     if (num > 1){
         for (let i = 2; i < num / 2; i++ ){
             if (num % i === 0){
@@ -17,7 +16,7 @@ const isPrime = () => {
         }
         return true;
     }
-    return true;
+    return false;
 }
 
 const checkIsPrime = () => {
