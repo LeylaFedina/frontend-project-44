@@ -9,13 +9,15 @@ const getRandomNum = () => Math.floor(Math.random() * 101);
 let numOne = getRandomNum();
 let numTwo = getRandomNum();
 
-const findCommonDivisor = () => {
+const findCommonDivisor = () => { 
+  let result = 0;
   const minNum = Math.min(numOne, numTwo);
   for (let i = minNum; i > 0; i -= 1) {
     if (numOne % i === 0 && numTwo % i === 0) {
-      return i;
+      result = i;
     }
   }
+  return result;
 };
 
 const checkCommonDivision = () => {

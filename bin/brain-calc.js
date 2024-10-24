@@ -26,6 +26,7 @@ const calculate = () => {
     case ('*'):
       return num1 * num2;
   }
+  return;
 }
 
 const checkCalculation = () => {
