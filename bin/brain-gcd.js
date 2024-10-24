@@ -12,7 +12,7 @@ let numTwo = getRandomNum();
 
 const findCommonDivisor = () => {
   const minNum = Math.min(numOne, numTwo);
-  for (let i = minNum; i>0; i-1){
+  for (let i = minNum; i>0; i--){
     if (numOne % i === 0 && numTwo %i ===0) {
       return i;
     };
