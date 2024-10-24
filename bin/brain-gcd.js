@@ -9,9 +9,9 @@ const getRandomNum = () => Math.floor(Math.random() * 101);
 let numOne = getRandomNum();
 let numTwo = getRandomNum();
 
-const findCommonDivisor = (numOne, numTwo) => {
+const findCommonDivisor = () => {
   const minNum = Math.min(numOne, numTwo);
-  for (let i = minNum; i > 0; i = i - 1) {
+  for (let i = minNum; i > 0; i -= 1) {
     if (numOne % i === 0 && numTwo % i === 0) {
       return i;
     }
