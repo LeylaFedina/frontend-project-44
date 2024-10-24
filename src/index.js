@@ -13,12 +13,11 @@ const gameRound = (gameRules, configureGame) => {
     const check = configureGame();
     if (check.userAnswer === String(check.correctAnswer)) {
       console.log('Correct!');
-      i++;
+      i=i+1;
       if (i > 2) {
         console.log(`Congratulations, ${userName}!`);
       }
-    }
-    else {
+    } else {
       console.log(`${check.userAnswer}' is wrong answer ;(. Correct answer was '${check.correctAnswer}'. \nLet's try again, ${userName}!`);
       break;
     }
