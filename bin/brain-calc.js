@@ -13,7 +13,7 @@ const getRandomOperator = () => {
   return operators[operatorIndex];
 };
 
-function calculate (num1, num2, operator) {
+function calculate(num1, num2, operator) {
   switch (operator) {
     case ('+'):
       return num1 + num2;
@@ -22,7 +22,7 @@ function calculate (num1, num2, operator) {
     case ('*'):
       return num1 * num2;
   }
-}
+};
 
 function checkCalculation(num1, num2, operator) {
   num1 = getRandomNum();

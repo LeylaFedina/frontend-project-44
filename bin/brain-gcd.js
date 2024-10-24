@@ -2,7 +2,7 @@
 import readlineSync from 'readline-sync';
 import gameRound from '../src/index.js';
 
-const gameRules = "Find the greatest common divisor of given numbers.";
+const gameRules = 'Find the greatest common divisor of given numbers.';
 
 const getRandomNum = () => Math.floor(Math.random() * 101);
 
@@ -11,7 +11,7 @@ let numTwo = getRandomNum();
 
 const findCommonDivisor = () => {
   const minNum = Math.min(numOne, numTwo);
-  for (let i = minNum; i > 0; i--){
+  for (let i = minNum; i > 0; i--) {
     if (numOne % i === 0 && numTwo % i === 0) {
       return i;
     }
@@ -27,5 +27,5 @@ const checkCommonDivision = () => {
     userAnswer,
     correctAnswer,
   };
-}
+};
 export default gameRound(gameRules, checkCommonDivision);
