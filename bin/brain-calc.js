@@ -27,7 +27,7 @@ const calculate = () => {
       return num1 * num2;
   }
   return;
-}
+};
 
 const checkCalculation = () => {
   num1 = getRandomNum();
@@ -39,5 +39,5 @@ const checkCalculation = () => {
     userAnswer,
     correctAnswer,
   };
-}
+};
 export default gameRound(gameRules, checkCalculation);
