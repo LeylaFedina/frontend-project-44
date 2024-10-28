@@ -14,7 +14,7 @@ const gameRound = (gameRules, configureGame) => {
     if (check.userAnswer === String(check.correctAnswer)) {
       console.log('Correct!');
       i += 1;
-      if (i > 2) {
+      if (i > rounds) {
         console.log(`Congratulations, ${userName}!`);
       }
     } else {

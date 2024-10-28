@@ -6,14 +6,11 @@ const gameRules = 'What number is missing in the progression?';
 
 const getRandomIndexOfArr = (arr) => Math.floor(Math.random() * arr.length);
 
-const generateProgression = () => {
-  const arrLength = 10;
+const generateProgression = (arrLength = 10, start = getRandomNum(), arrStep = getRandomNum()) => {
   const progression = [];
-  progression[0] = getRandomNum();
-  const arrDiff = getRandomNum();
-
+  progression[0] = start;
   for (let i = 1; i < arrLength; i += 1) {
-    const nextArrElement = progression[i - 1] + arrDiff;
+    const nextArrElement = progression[i - 1] + arrStep;
     progression.push(nextArrElement);
   }
   return progression;

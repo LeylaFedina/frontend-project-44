@@ -23,7 +23,7 @@ const calculate = () => {
     case ('*'):
       return num1 * num2;
     default:
-      break;
+      throw new Error('Unknown state'); //должно выбрасывать ошибку
   }
   return false;
 };
