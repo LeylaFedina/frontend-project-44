@@ -41,7 +41,7 @@ $ brain-even
 $ brain-calc
 ```
 ### Пример игры
-[![asciicast](https://asciinema.org/a/1RLIMvDvKFKpQZlqazMjMGQ3Z.svg)](https://asciinema.org/a/1RLIMvDvKFKpQZlqazMjMGQ3Z)
+[![asciicast](https://asciinema.org/a/UXTWRoCIFKluy8Ht2LTgJaqFQ.svg)](https://asciinema.org/a/UXTWRoCIFKluy8Ht2LTgJaqFQ)
 
 
 ## Игра: "НОД"
@@ -77,6 +77,6 @@ $ brain-progression
 $ brain-prime
 ```
 ### Пример игры
-[![asciicast](https://asciinema.org/a/HIUzOigNn2gn1SWtCoINCU.svg)](https://asciinema.org/a/HIUzOigNn2gn1SWtCoINCU)
+[![asciicast](https://asciinema.org/a/ld0pBn690ApEfjUIKtIyUGqrS.svg)](https://asciinema.org/a/ld0pBn690ApEfjUIKtIyUGqrS)
 
 
