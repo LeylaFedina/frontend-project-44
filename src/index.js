@@ -9,7 +9,7 @@ const gameRound = (gameRules, configureGame) => {
 
   console.log(gameRules);
 
-  for (let i = 0; i < rounds; i) {
+  for (let i = 1; i <= rounds; i) {
     const check = configureGame();
     if (check.userAnswer === String(check.correctAnswer)) {
       console.log('Correct!');
