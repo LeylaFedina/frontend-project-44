@@ -77,6 +77,4 @@ $ brain-progression
 $ brain-prime
 ```
 ### Пример игры
-[![asciicast](https://asciinema.org/a/ld0pBn690ApEfjUIKtIyUGqrS.svg)](https://asciinema.org/a/ld0pBn690ApEfjUIKtIyUGqrS)
-
-
+[![asciicast](https://asciinema.org/a/rqWBhRIe8PGar5pH05gVngZ5Y.svg)](https://asciinema.org/a/rqWBhRIe8PGar5pH05gVngZ5Y)
