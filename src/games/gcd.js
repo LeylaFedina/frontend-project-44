@@ -1,5 +1,7 @@
 import readlineSync from 'readline-sync';
+
 import gameRound from '../index.js';
+
 import getRandomNum from '../exportCode.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
