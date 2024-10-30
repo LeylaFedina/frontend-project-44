@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import gameRound from '../index.js';
-import getRandomNum from '../exportCode.js';
+import launchGameRound from '../index.js';
+import getRandomNum from '../utility.js';
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -16,4 +16,4 @@ const checkEven = () => {
     correctAnswer,
   };
 };
-export default () => gameRound(gameRules, checkEven);
+export default () => launchGameRound(gameRules, checkEven);

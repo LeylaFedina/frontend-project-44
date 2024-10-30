@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import gameRound from '../index.js';
-import getRandomNum from '../exportCode.js';
+import launchGameRound from '../index.js';
+import getRandomNum from '../utility.js';
 
 const gameRules = 'What is the result of the expression?';
 
@@ -32,10 +32,10 @@ const checkCalculation = () => {
   num2 = getRandomNum();
   operator = getRandomOperator();
   const userAnswer = readlineSync.question(`Question: ${num1} ${operator} ${num2}`);
-  const correctAnswer = calculate(num1, num2, operator);
+  const correctAnswer = String(calculate(num1, num2, operator));
   return {
     userAnswer,
     correctAnswer,
   };
 };
-export default () => gameRound(gameRules, checkCalculation);
+export default () => launchGameRound(gameRules, checkCalculation);

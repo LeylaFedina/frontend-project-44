@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import gameRound from '../index.js';
-import getRandomNum from '../exportCode.js';
+import launchGameRound from '../index.js';
+import getRandomNum from '../utility.js';
 
 const gameRules = 'What number is missing in the progression?';
 
@@ -18,7 +18,7 @@ const generateProgression = (arrLength = 10, start = getRandomNum(), arrStep = g
 const checkProgression = () => {
   const progressionArray = generateProgression();
   const randomIndex = getRandomIndexOfArr(progressionArray);
-  const correctAnswer = progressionArray[randomIndex];
+  const correctAnswer = String(progressionArray[randomIndex]);
   progressionArray[randomIndex] = '..';
   const progressionArrayStr = progressionArray.join(' ');
   const userAnswer = readlineSync.question(`Question: ${progressionArrayStr}`);
@@ -29,4 +29,4 @@ const checkProgression = () => {
   };
 };
 
-export default () => gameRound(gameRules, checkProgression);
+export default () => launchGameRound(gameRules, checkProgression);

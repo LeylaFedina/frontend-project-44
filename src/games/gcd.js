@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import gameRound from '../index.js';
-import getRandomNum from '../exportCode.js';
+import launchGameRound from '../index.js';
+import getRandomNum from '../utility.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
@@ -24,4 +24,4 @@ const checkCommonDivision = () => {
     correctAnswer,
   };
 };
-export default () => gameRound(gameRules, checkCommonDivision);
+export default () => launchGameRound(gameRules, checkCommonDivision);

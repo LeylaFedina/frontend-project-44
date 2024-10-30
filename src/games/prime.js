@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
-import gameRound from '../index.js';
-import getRandomNum from '../exportCode.js';
+import launchGameRound from '../index.js';
+import getRandomNum from '../utility.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -26,4 +26,4 @@ const checkIsPrime = () => {
   };
 };
 
-export default () => gameRound(gameRules, checkIsPrime);
+export default () => launchGameRound(gameRules, checkIsPrime);
