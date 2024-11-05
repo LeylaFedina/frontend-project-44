@@ -4,13 +4,6 @@ import getRandomNum from '../utility.js';
 
 const gameRules = 'What is the result of the expression?';
 
-const operators = ['+', '-', '*'];
-
-const getRandomOperator = () => {
-  const operatorIndex = getRandomNum(0, operators.length - 1);
-  return operators[operatorIndex];
-};
-
 const calculate = (num1, num2, operators) => {
   switch (operators) {
     case '+':
@@ -22,6 +15,13 @@ const calculate = (num1, num2, operators) => {
     default:
       throw new Error(`Unknown operator: ${operators}`);
   }
+};
+
+const operators = ['+', '-', '*'];
+
+const getRandomOperator = () => {
+  const operatorIndex = getRandomNum(0, operators.length - 1);
+  return operators[operatorIndex];
 };
 
 const checkCalculation = () => {
