@@ -5,32 +5,30 @@ import getRandomNum from '../utility.js';
 const gameRules = 'What is the result of the expression?';
 
 const operators = ['+', '-', '*'];
+
 const getRandomOperator = () => {
-  const operatorIndex = Math.floor(Math.random() * operators.length);
+  const operatorIndex = getRandomNum(0, operators.length - 1);
   return operators[operatorIndex];
 };
 
-let num1 = getRandomNum();
-let num2 = getRandomNum();
-let operator = getRandomOperator();
 
-const calculate = () => {
-  switch (operator) {
-    case ('+'):
+const calculate = (num1, num2, operators) => {
+  switch (operators) {
+    case '+':
       return num1 + num2;
-    case ('-'):
+    case '-':
       return num1 - num2;
-    case ('*'):
+    case '*':
       return num1 * num2;
     default:
-      throw new Error('Unknown state');
+      throw new Error(`Unknown operator: ${operators}`);
   }
 };
 
 const checkCalculation = () => {
-  num1 = getRandomNum();
-  num2 = getRandomNum();
-  operator = getRandomOperator();
+  const operator = getRandomOperator();
+  const num1 = getRandomNum();
+  const num2 = getRandomNum();
   const userAnswer = readlineSync.question(`Question: ${num1} ${operator} ${num2}`);
   const correctAnswer = String(calculate(num1, num2, operator));
   return {

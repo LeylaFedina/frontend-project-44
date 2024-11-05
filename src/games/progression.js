@@ -4,7 +4,9 @@ import getRandomNum from '../utility.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-const getRandomIndexOfArr = (arr) => Math.floor(Math.random() * arr.length);
+const getRandomIndexOfArr = (arr) => {
+  return getRandomNum(0, arr.length - 1);
+}
 const generateProgression = (arrLength = 10, start = getRandomNum(), arrStep = getRandomNum()) => {
   const progression = [];
   progression[0] = start;
