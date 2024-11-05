@@ -11,7 +11,6 @@ const getRandomOperator = () => {
   return operators[operatorIndex];
 };
 
-
 const calculate = (num1, num2, operators) => {
   switch (operators) {
     case '+':
